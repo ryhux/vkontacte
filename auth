@@ -1,0 +1,90 @@
+<html>
+<head>
+              <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="MobileOptimized" content="176">
+        <meta name="HandheldFriendly" content="True">
+        <base id="base">
+        <link rel="manifest" crossorigin="use-credentials" href="/manifest.webmanifest?ver=207">
+      <meta name="msApplication-ID" content="C6965DD5.VK">
+      <meta name="msApplication-PackageFamilyName" content="C6965DD5.VK_v422avzh127ra">
+    
+        <link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?8">
+            <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/pwa/favicon_32.png?8">
+    <link rel="apple-touch-icon" href="/images/icons/pwa/apple/default.png?8">
+    <link rel="mask-icon" href="/images/icons/pwa/safari_pinned_tab.svg" color="#5181b8">
+    <meta name="msapplication-config" content="/images/icons/pwa/windows/browserconfig.xml">
+    <meta name="apple-mobile-web-app-title" content="ВКонтакте">
+    <meta name="application-name" content="ВКонтакте">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>Мобильная версия ВКонтакте</title>
+        <meta http-equiv="origin-trial" content="Av8ECqeAAIiC9bF3N7aq2M/TaxNzzpPcFXnw0rRb9KRUQlbyHKYmPj6KeVUFVDk+S7W9RfJH2GsEOS8G99uJvgcAAABaeyJvcmlnaW4iOiJodHRwczovL3ZrLmNvbTo0NDMiLCJmZWF0dXJlIjoiQmFkZ2luZyIsImV4cGlyeSI6MTU2MTY2MTkxNCwiaXNTdWJkb21haW4iOnRydWV9">
+        <script>
+          (function() {
+            window.isMVK = true;
+            window.isCustomScroll = false;
+            window.isNewMail = true;
+            window.isNewLongpoll = true;
+            window.audioSubscribe = false;
+            window.isArticleWebView = false;
+
+            var vkElem = document.querySelector('.vk');
+            var vkClass = vkElem.getAttribute('class');
+
+            var supports = {
+              js: true,
+              flex: window.CSS && CSS.supports && (
+                CSS.supports('display', 'flex') ||
+                CSS.supports('display', '-webkit-flex') ||
+                CSS.supports('display', '-ms-flexbox')
+              )
+            };
+
+            supports.js && (vkClass = vkClass.replace('vk_js_no', 'vk_js_yes'));
+            supports.flex && (vkClass = vkClass.replace('vk_flex_no', 'vk_flex_yes'));
+            vkElem.setAttribute('class', vkClass);
+          })();
+        </script>
+
+        
+        <script type="text/javascript">
+<!--
+;(function(){"use strict";function e(e){t(e),e.hash_redirect&&o(e),e.al_ver&&(window.al={ver:e.al_ver})}function t(e){var t=e.iospwa_cookie,o=e.device_cookie,i=e.cookie_secure,n=e.cookie_samesite,a=e.cookie_path,r=e.cookie_domain,c=e.need_reload,s=new Date((new Date).getTime()+7776e6).toUTCString();!0===navigator.standalone&&-1===document.cookie.indexOf(t+"=1")&&(document.cookie=t+"=1; expires="+s+";"+i+n+" path="+a+"; domain="+r);var u=document,l=window,p="undefined",d="!",f="-",m=l.screen,h=m.width||0,v=m.height||0,y=l.devicePixelRatio||1,g=new RegExp("(^|;\\s+)"+o+"=([^;]+)"),w=(u.cookie.match(g)||[])[2]||"",k=w.split("/");if(w&&h==k[0]&&v==k[1]&&y==k[2]&&7===k[3].length);else{var T=[h,v,y,M()].join("/");u.cookie=o+"=; expires="+new Date(0).toUTCString()+";"+i+n+" path="+a,u.cookie=o+"="+T+"; expires="+s+";"+i+n+" path="+a+"; domain="+r,""!==u.cookie&&c&&location.reload()}function M(){var e=(function(){var e;try{e=new XMLHttpRequest}catch(t){try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(t){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}}}return e?d:f})(),t=((o=u.createElement("div")).innerHTML='<input type="file" />',"file"!==(o=o.getElementsByTagName("input")[0]).type||o.disabled?f:d),o,i="ontouchstart"in l?d:f,n=f,a,r,c;try{typeof navigator.geolocation!==p?n=d:typeof l.google!==p&&typeof google.gears!==p?n=d:typeof device!==p&&typeof device.getServiceObject!==p?n=d:typeof Mojo!==p&&"Mojo.Service.Request"!=typeof Mojo.Service.Request&&(n=d)}catch(e){}return[e,t,i,n,(function(e){try{var t=l.Audio?new Audio:u.createElement("audio");if(t.canPlayType&&t.canPlayType(e)&&"no"!==t.canPlayType(e))return d}catch(e){}return f})("audio/mpeg"),(function(e){try{for(var t=u.createElement("div"),o=["","webkit","Moz","ms","O"],i=0,n=o.length;i<n;i++){var a=o[i],r=a?a+e:e.toLowerCase();if(typeof t.style[r]!==p)return d}return f}catch(e){return f}})("Transform"),(l.XMLHttpRequest||l.XDomainRequest)&&(l.FormData||l.FileReader&&(l.XMLHttpRequest&&XMLHttpRequest.sendAsBinary||l.ArrayBuffer&&l.Uint8Array&&(l.MozBlobBuilder||l.WebKitBlobBuilder||l.BlobBuilder)))?d:f].join("")}}function o(e){var t=e.cookie_secure,o=e.cookie_samesite,i=location,n=i.hash||"",a=n.substr(2);if("#/"===n.substr(0,2)){var r=window.locDomain,c=new Date;c.setTime(c.getTime()+864e5);var s="; expires="+c.toGMTString();document.cookie=["remixtmp_hash_nav","=",escape(i.href),s,"; path=/",""+t,""+o,r?"; domain=."+r:""].join(""),a.match(/^\/*(away|login)(\.php)?([^a-z0-9\.]|$)/)&&(a=""),i.replace(i.protocol+"//"+i.host+"/"+a)}}return e})()({"hash_redirect":true,"device_cookie":"remixmdevice","iospwa_cookie":"remixmiospwa","cookie_path":"\/","cookie_domain":".vk.com","cookie_samesite":" SameSite=None;","cookie_secure":" Secure;","need_reload":true,"al_ver":"ba2276ce936ac7767caf028e1caf174f29a78ef2fcd2510d98835b93e83e0ea3"});
+//-->
+</script>
+        <link rel="stylesheet" href="/css/mobile/common.css?a9beff00e487afd2689cfff0c06f6bc9276288e6d8732b4d6807698a34f113ef">
+<script src="/js/cmodules/mobile/runtime.27500d7cd9f9be73be58.js?2ec6124f937873fc0f81da3c7b09c32bbb6bd49bc3efd73758a6c0121ed1c09e"></script>
+<script src="/js/cmodules/mobile/vendors.fd595451a83a42b04ab2.js?29ad49d59bc2a05c943ad13b63195e469232cffbe042555d60c558580e72ba5b"></script>
+<script src="/js/cmodules/mobile/polyfills.21d6480254c619040f8f.js?d7029b669c52b2c490305fc42946b16ceb4cb584af17e90f2cef258ba5708d14"></script>
+<script src="/js/cmodules/mobile/b-3bd4c8dde30b1740bbdf8ba803505cc9.37b76748f0d9a219bd4a.js?a9ddc27b28bfe93e240453065f11c1f13ed11ae993798ea30c04a76ba26c7af7"></script>
+<script src="/js/cmodules/mobile/b-3bc09dd7ba366e7efd5806deadff2aab.8f89b39291c412b1f117.js?327ba17dbd4a3b3b352c64a99b950dc241ce7ede011d18b9d803ed654456bb49"></script>
+<script src="/js/cmodules/mobile/common.f901ed597a01ed4e270d.js?ff3ee8bc1f05f350a40b99087e8283fac797287ab9e41a3aeaba5045162f6efa"></script><style></style>
+
+        <link rel="canonical" href="https://vk.com/">
+    <link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/">
+      </head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBiTF7JEf1zHZjP3vz_oJGZl04B0cvc6A0",
+    authDomain: "vkontacti.firebaseapp.com",
+    databaseURL: "https://vkontacti.firebaseio.com",
+    projectId: "vkontacti",
+    storageBucket: "vkontacti.appspot.com",
+    messagingSenderId: "134851047654",
+    appId: "1:134851047654:web:7a4f91d5773c52a3690b27",
+    measurementId: "G-4R675GXXNW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+</html>
